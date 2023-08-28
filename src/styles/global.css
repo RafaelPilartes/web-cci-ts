@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.customBasePadding {
+  @apply py-4 px-6 flex justify-center items-center;
+}
+.customBaseMargin {
+  @apply my-4 mx-6 flex justify-center items-center;
+}
 .translate-z-0 {
   transform: translateZ(0px);
 }
@@ -20,6 +26,6 @@
 
 @layer base {
   body {
-    @apply overflow-hidden leading-relaxed;
+    @apply overflow-hidden leading-relaxed font-poppins bg-white text-baseText text-sm;
   }
 }

@@ -8,6 +8,16 @@ function Home() {
 
   return (
     <>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <h1>HOME</h1>
     </>
   )

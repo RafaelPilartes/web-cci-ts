@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    './src/**/*.{js,ts,jsx,tsx}',
+    'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
+  ],
   theme: {
     screens: {
       sm: '640px',
@@ -21,8 +24,18 @@ export default {
     },
     extend: {
       colors: {
-        primary: '#131424',
-        secondary: '#393A47',
+        baseText: '#02215E',
+        primary: {
+          50: '#fee5de',
+          100: '#fdc8ba',
+          200: '#f74f22',
+          300: '#de471f',
+          400: '#c63f1b',
+          500: '#b93b1a',
+          700: '#942f14',
+          800: '#6f240f',
+          900: '#561c0c'
+        },
         accent: '#F13024'
       },
       backgroundImage: {
@@ -34,7 +47,10 @@ export default {
       animation: {
         'spin-slow': 'spin 6s linear infinite'
       }
+    },
+    fontFamily: {
+      poppins: ['Poppins']
     }
   },
-  plugins: []
+  plugins: [require('flowbite/plugin')]
 }
