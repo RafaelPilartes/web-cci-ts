@@ -30,7 +30,7 @@ export const Header = () => {
   ]
 
   const openMenu = () => {
-    setMenuIsVisible(!menuIsVisible)
+    setMenuIsVisible(true)
   }
 
   return (
@@ -46,7 +46,7 @@ export const Header = () => {
           {/* Logo */}
           <div className="px-4 py-2  ">
             <img
-              src="/logo.png"
+              src="/logo/logo.png"
               alt="Logo CCI"
               className="w-full max-w-s-xs min-w-[8rem] "
             />

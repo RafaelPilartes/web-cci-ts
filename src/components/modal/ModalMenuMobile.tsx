@@ -73,8 +73,8 @@ export function ModalMenuMobile({
   return (
     <>
       <div
-        className={`fixed z-50 left-0 bg-white h-screen w-80 flex items-start justify-start flex-col gap-4 overflow-auto transition-all duration-500 ${
-          !menuIsVisible && '-left-80'
+        className={`fixed z-50 -left-80 bg-white h-screen w-80 flex items-start justify-start flex-col gap-4 overflow-auto transition-all duration-500 ${
+          menuIsVisible && 'left-0'
         }`}
       >
         {/* Logo */}

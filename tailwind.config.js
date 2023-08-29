@@ -32,7 +32,9 @@ export default {
     extend: {
       colors: {
         baseText: '#02215E',
+        baseDark: '#000F21',
         baseTextWhite: '#ffffff',
+        baseTextGray: 'rgb(209 213 219)',
         primary: {
           50: '#fee5de',
           100: '#fdc8ba',
@@ -47,10 +49,7 @@ export default {
         accent: '#F13024'
       },
       backgroundImage: {
-        explosion: 'url("/bg-explosion.png")',
-        circles: 'url("/bg-circles.png")',
-        circleStar: 'url("/circle-star.svg")',
-        site: 'url("/site-bg.svg")'
+        footer: 'url("/background/footer-bg.jpg")'
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite'
