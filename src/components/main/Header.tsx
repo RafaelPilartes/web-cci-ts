@@ -1,13 +1,13 @@
 import { useContext, useState } from 'react'
 
-import Dropdown from './Dropdown'
+import Dropdown from '../Dropdown'
 import { Phone, Mail, Dot, UserCircle2, HeartHandshake } from 'lucide-react'
-import { BaseButton } from './buttons/baseButton'
-import { routsNameMain } from '../data/routsName'
+import { BaseButton } from '../buttons/baseButton'
+import { routsNameMain } from '../../data/routsName'
 import { AiOutlineMenuFold, AiOutlineMenuUnfold } from 'react-icons/ai'
 import { CgMenuGridR } from 'react-icons/cg'
-import { ModalMenuMobile } from './modal/ModalMenuMobile'
-import { AppContext } from '../provider/AppProvider'
+import { ModalMenuMobile } from '../modal/ModalMenuMobile'
+import { AppContext } from '../../provider/AppProvider'
 
 export const Header = () => {
   const { menuIsVisible, setMenuIsVisible } = useContext(AppContext)
