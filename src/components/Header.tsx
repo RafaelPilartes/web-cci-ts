@@ -1,8 +1,9 @@
 import Dropdown from './Dropdown'
 import { Phone, Mail, Dot, UserCircle2, HeartHandshake } from 'lucide-react'
-import { FaDotCircle } from 'react-icons/fa'
 import { BaseButton } from './buttons/baseButton'
 import { routsNameMain } from '../data/routsName'
+import { AiOutlineMenuFold, AiOutlineMenuUnfold } from 'react-icons/ai'
+import { CgMenuGridR } from 'react-icons/cg'
 
 export const Header = () => {
   const dropdownItemsChurch = [
@@ -25,28 +26,32 @@ export const Header = () => {
   return (
     <header className="fixed z-30 w-full p-4 font-semibold">
       {/* Container */}
-      <div className="bg-white flex items-center justify-between px-4">
+      <div className="bg-white flex items-center justify-between max-w-s-1030:py-1 ">
         {/* Logo */}
-        <div className="customBaseMargin">
-          <img src="/logo.png" alt="Logo CCI" className="w-[250px] h-[50px] " />
+        <div className="px-4 py-2  ">
+          <img
+            src="/logo.png"
+            alt="Logo CCI"
+            className="w-full max-w-s-xs min-w-[8rem] "
+          />
         </div>
 
         {/* Links */}
         <div className="w-full flex items-center justify-between flex-col">
           {/* Top */}
-          <div className="w-full flex items-center justify-between flex-row border-b border-l border-r border-gray-300">
+          <div className="w-full flex items-center justify-between flex-row border-b border-l border-r border-gray-300 max-w-s-1030:border-b-transparent max-w-s-1030:justify-center">
             {/* Contacts */}
-            <div className="flex items-center justify-between flex-row gap-4">
+            <div className="flex items-center justify-between flex-row gap-4 max-w-s-1030:hidden">
               <div className="customBasePadding gap-2">
                 <Phone size={14} /> (+244) 923 414 621
               </div>
               <div className="customBasePadding gap-2">
-                <Mail size={14} /> geral@rafaelpilarte.com
+                <Mail size={14} /> geral@cci.com
               </div>
             </div>
 
             {/* Links */}
-            <ul className="flex items-center justify-between flex-row gap-4">
+            <ul className="flex items-center justify-between flex-row gap-4 max-w-s-570:hidden ">
               <li className="customBasePadding hover:text-primary-200 transition-all duration-200">
                 <a href={routsNameMain.events}>Eventos</a>
               </li>
@@ -76,7 +81,7 @@ export const Header = () => {
           </div>
 
           {/* Bottom */}
-          <div className="w-full flex items-center justify-between flex-row border-l border-r border-gray-300">
+          <div className="w-full flex items-center justify-between flex-row border-l border-r border-gray-300 max-w-s-1030:hidden ">
             {/* Links Nav */}
             <nav>
               <ul className="flex items-center justify-between flex-row">
@@ -113,12 +118,18 @@ export const Header = () => {
         </div>
 
         {/* Button */}
-        <div className="w-full max-w-[10rem] customBaseMargin">
+        <div className="w-full max-w-[10rem] customBaseMargin  hidden min-w-s-1390:flex">
           <BaseButton
             icon={HeartHandshake}
             title="DOAR AQUI"
             styleBtn="LeftToRight"
           />
+        </div>
+        <div className="w-full max-w-[2rem] items-center justify-center customBaseMargin max-w-s-1030:flex hidden ">
+          <button className="transition-all duration-300 hover:text-primary-200 ">
+            <CgMenuGridR size={38} />
+            {/* <AiOutlineMenuUnfold /> */}
+          </button>
         </div>
       </div>
     </header>

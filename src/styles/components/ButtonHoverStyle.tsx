@@ -78,7 +78,7 @@ export const ShineLight = ({ children, className, ...props }: ButtonProps) => {
   return (
     <button
       {...props}
-      className="before:ease rounded-md before:rounded-md relative h-12 px-4 overflow-hidden border border-primary-200 bg-primary-200 text-white shadow-md transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-primary-200 hover:before:-translate-x-40 active:scale-90"
+      className="before:ease rounded-md before:rounded-md relative h-12 px-4 overflow-hidden border border-primary-200 bg-primary-200 text-white shadow-md transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-primary-200 hover:before:-translate-x-60 active:scale-90"
     >
       <span className="relative flex flex-row justify-center items-center gap-2 z-[2]">
         {children}
@@ -92,7 +92,7 @@ export const LeftToRight = ({ children, className, ...props }: ButtonProps) => {
   return (
     <button
       {...props}
-      className="text-primary hover:before:bg-primary-200 relative h-[50px] w-40 overflow-hidden border border-primary-200 bg-white px-3 text-primary-200 shadow-md transition-all before:absolute rounded-md before:rounded-md before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-primary-200 before:transition-all before:duration-200 hover:text-white hover:shadow-primary-200 hover:before:left-0 hover:before:w-full active:scale-90"
+      className="text-primary hover:before:bg-primary-200 relative h-[50px] w-full overflow-hidden border border-primary-200 bg-white px-3 text-primary-200 shadow-md transition-all before:absolute rounded-md before:rounded-md before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-primary-200 before:transition-all before:duration-200 hover:text-white hover:shadow-primary-200 hover:before:left-0 hover:before:w-full active:scale-90"
     >
       <span className="relative flex flex-row justify-center items-center gap-2 z-[2]">
         {children}
@@ -142,7 +142,7 @@ export const Alternate = ({ children, className, ...props }: ButtonProps) => {
   return (
     <button
       {...props}
-      className="group relative min-h-[50px] w-40 overflow-hidden border border-primary-200 bg-white text-primary-200 shadow-md transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-primary-200 before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-primary-200 after:duration-500 hover:text-white hover:before:h-full hover:after:h-full active:scale-90"
+      className="group relative rounded-md min-h-[50px] w-40 overflow-hidden border border-primary-200 bg-white text-primary-200 shadow-md transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-primary-200 before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-primary-200 after:duration-500 hover:text-white hover:before:h-full hover:after:h-full active:scale-90"
     >
       <span className="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-primary-200 before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-primary-200 after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
       <span className="absolute bottom-0 left-0 right-0 top-0 z-[2] flex h-full w-full items-center justify-center group-hover:text-white">

@@ -14,6 +14,7 @@ import {
 
 interface baseButtonProps {
   icon?: ElementType
+  iconRight?: ElementType
   onclickBtn?: () => void
   styleBtn?:
     | 'ShadowCenter'
@@ -31,6 +32,7 @@ interface baseButtonProps {
 
 export function BaseButton({
   icon: Icon,
+  iconRight: IconRight,
   onclickBtn,
   styleBtn,
   title
@@ -41,6 +43,7 @@ export function BaseButton({
         <ButtonCenterHover onClick={onclickBtn}>
           <span>{Icon && <Icon size={18} />}</span>
           <span> {title} </span>
+          <span>{IconRight && <IconRight size={18} />}</span>
         </ButtonCenterHover>
       )
       break
@@ -50,6 +53,7 @@ export function BaseButton({
         <ButtonCenterHoverReverse onClick={onclickBtn}>
           <span>{Icon && <Icon size={18} />}</span>
           <span> {title} </span>
+          <span>{IconRight && <IconRight size={18} />}</span>
         </ButtonCenterHoverReverse>
       )
       break
@@ -58,6 +62,7 @@ export function BaseButton({
         <SlideTop onClick={onclickBtn}>
           <span>{Icon && <Icon size={18} />}</span>
           <span> {title} </span>
+          <span>{IconRight && <IconRight size={18} />}</span>
         </SlideTop>
       )
       break
@@ -66,6 +71,7 @@ export function BaseButton({
         <SkewCurtain>
           <span>{Icon && <Icon size={18} />}</span>
           <span> {title} </span>
+          <span>{IconRight && <IconRight size={18} />}</span>
         </SkewCurtain>
       )
       break
@@ -74,6 +80,7 @@ export function BaseButton({
         <ShineLight onClick={onclickBtn}>
           <span>{Icon && <Icon size={18} />}</span>
           <span> {title} </span>
+          <span>{IconRight && <IconRight size={18} />}</span>
         </ShineLight>
       )
       break
@@ -82,6 +89,7 @@ export function BaseButton({
         <LeftToRight onClick={onclickBtn}>
           <span>{Icon && <Icon size={18} />}</span>
           <span> {title} </span>
+          <span>{IconRight && <IconRight size={18} />}</span>
         </LeftToRight>
       )
       break
@@ -90,6 +98,7 @@ export function BaseButton({
         <CurtainWindow onClick={onclickBtn}>
           <span>{Icon && <Icon size={18} />}</span>
           <span> {title} </span>
+          <span>{IconRight && <IconRight size={18} />}</span>
         </CurtainWindow>
       )
       break
@@ -98,6 +107,7 @@ export function BaseButton({
         <SmoochTopAndDown onClick={onclickBtn}>
           <span>{Icon && <Icon size={18} />}</span>
           <span> {title} </span>
+          <span>{IconRight && <IconRight size={18} />}</span>
         </SmoochTopAndDown>
       )
       break
@@ -106,6 +116,7 @@ export function BaseButton({
         <Alternate onClick={onclickBtn}>
           <span>{Icon && <Icon size={18} />}</span>
           <span> {title} </span>
+          <span>{IconRight && <IconRight size={18} />}</span>
         </Alternate>
       )
       break
@@ -114,6 +125,7 @@ export function BaseButton({
         <CircleHover onClick={onclickBtn}>
           <span>{Icon && <Icon size={18} />}</span>
           <span> {title} </span>
+          <span>{IconRight && <IconRight size={18} />}</span>
         </CircleHover>
       )
       break
@@ -123,6 +135,7 @@ export function BaseButton({
         <ButtonCenterHover onClick={onclickBtn}>
           <span>{Icon && <Icon size={18} />}</span>
           <span> {title} </span>
+          <span>{IconRight && <IconRight size={18} />}</span>
         </ButtonCenterHover>
       )
       break

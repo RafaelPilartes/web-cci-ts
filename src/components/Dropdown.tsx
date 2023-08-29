@@ -15,7 +15,7 @@ interface DropdownProps {
 export function Dropdown({ icon: Icon, title, items }: DropdownProps) {
   return (
     <div className="relative inline-block text-left group">
-      <button className="w-full px-6 py-2 rounded-lg flex items-center justify-center flex-row gap-2">
+      <button className="w-full px-4 py-2 rounded-lg flex items-center justify-center flex-row gap-2">
         {title}
         <AiOutlinePlus className="text-primary-200 text-sm" />
       </button>
