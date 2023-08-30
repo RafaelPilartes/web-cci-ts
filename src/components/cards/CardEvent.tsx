@@ -2,7 +2,7 @@ import { ArrowRight, Clock3, Map } from 'lucide-react'
 import React from 'react'
 import { BaseButton } from '../buttons/baseButton'
 
-interface EventCardProps {
+interface CardEventProps {
   imageUrl: string
   title: string
   date: string
@@ -10,13 +10,13 @@ interface EventCardProps {
   location: string
 }
 
-export function EventCard({
+export function CardEvent({
   imageUrl,
   title,
   date,
   time,
   location
-}: EventCardProps) {
+}: CardEventProps) {
   return (
     <div className="bg-white w-full flex items-start justify-center flex-col gap-4 rounded-lg shadow-3xl ">
       <a href="#" className="relative w-full h-60 overflow-hidden">

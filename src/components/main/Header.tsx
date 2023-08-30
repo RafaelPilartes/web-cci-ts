@@ -24,7 +24,7 @@ export const Header = () => {
     { label: 'Galeria', link: routsNameMain.gallery }
   ]
   const dropdownItemsJoin = [
-    { label: 'Grupos', link: routsNameMain.groups },
+    { label: 'Ministério', link: routsNameMain.ministry },
     { label: 'Pedidos de oração', link: routsNameMain.prayerRequests },
     { label: 'Célula', link: routsNameMain.cell }
   ]

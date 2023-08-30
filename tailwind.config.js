@@ -18,6 +18,7 @@ export default {
 
       'max-w-s-1535': { max: '1535px' },
       'max-w-s-1030': { max: '1030px' },
+      'max-w-s-960': { max: '960px' },
       'max-w-s-570': { max: '570px' },
       'max-w-s-520': { max: '520px' },
       'max-w-s-420': { max: '420px' },
@@ -53,9 +54,12 @@ export default {
         accent: '#F13024'
       },
       boxShadow: {
-        '3xl': '0 10px 40px -15px rgba(0, 0, 0, 0.1)'
+        '3xl': '0 10px 40px -15px rgba(0, 0, 0, 0.1)',
+        '4xl': '0 10px 40px -15px rgba(0, 0, 0, 0.2)'
       },
       backgroundImage: {
+        squares: 'url("/background/squares.png")',
+        homeQuote: 'url("/background/bg-1.jpg")',
         footer: 'url("/background/footer-bg.jpg")'
       },
       animation: {
@@ -64,7 +68,8 @@ export default {
     },
     fontFamily: {
       poppins: ['Poppins'],
-      damion: ['Damion']
+      damion: ['Damion'],
+      dancingScript: ['Dancing Script']
     }
   },
   plugins: [require('flowbite/plugin')]

@@ -1,6 +1,6 @@
 import { Plus, Heart, BookOpen, ArrowRight } from 'lucide-react'
 import { BaseButton } from '../../../buttons/baseButton'
-import { CardInfoIcon } from '../../../cards/InfoIconCard'
+import { CardInfoIcon } from '../../../cards/CardInfoIcon'
 
 export function AboutUs() {
   return (
