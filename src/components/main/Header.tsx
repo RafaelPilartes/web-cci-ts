@@ -1,10 +1,9 @@
 import { useContext, useState } from 'react'
 
 import Dropdown from '../Dropdown'
-import { Phone, Mail, Dot, UserCircle2, HeartHandshake } from 'lucide-react'
+import { Phone, Mail, UserCircle2, HeartHandshake } from 'lucide-react'
 import { BaseButton } from '../buttons/baseButton'
 import { routsNameMain } from '../../data/routsName'
-import { AiOutlineMenuFold, AiOutlineMenuUnfold } from 'react-icons/ai'
 import { CgMenuGridR } from 'react-icons/cg'
 import { ModalMenuMobile } from '../modal/ModalMenuMobile'
 import { AppContext } from '../../provider/AppProvider'
@@ -137,7 +136,7 @@ export const Header = () => {
           <div className="w-full max-w-[10rem] customBaseMargin  hidden min-w-s-1390:flex">
             <BaseButton
               icon={HeartHandshake}
-              title="DOAR AQUI"
+              title="COLABORE"
               styleBtn="LeftToRight"
             />
           </div>

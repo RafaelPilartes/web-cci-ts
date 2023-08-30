@@ -14,11 +14,14 @@ export default {
       'min-w-s-1390': '1390px',
       'min-w-s-1030': '1030px',
       'min-w-s-640': '640px',
+      'min-w-s-900': '900px',
       'min-w-s-520': '520px',
 
       'max-w-s-1535': { max: '1535px' },
       'max-w-s-1030': { max: '1030px' },
       'max-w-s-960': { max: '960px' },
+      'max-w-s-900': { max: '900px' },
+      'max-w-s-640': { max: '640px' },
       'max-w-s-570': { max: '570px' },
       'max-w-s-520': { max: '520px' },
       'max-w-s-420': { max: '420px' },
@@ -32,13 +35,13 @@ export default {
     },
     extend: {
       colors: {
-        baseText: '#02215E',
+        baseText: '#022147',
         baseDark: '#000F21',
         baseTextWhite: '#ffffff',
         baseTextGray: 'rgb(209 213 219)',
 
         secondary: {
-          200: '#02215E'
+          200: '#022147'
         },
         primary: {
           50: '#fee5de',
@@ -60,6 +63,7 @@ export default {
       backgroundImage: {
         squares: 'url("/background/squares.png")',
         homeQuote: 'url("/background/bg-1.jpg")',
+        homeMinistry: 'url("/background/bg2.jpg")',
         footer: 'url("/background/footer-bg.jpg")'
       },
       animation: {

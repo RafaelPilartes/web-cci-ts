@@ -1,14 +1,18 @@
 import React, { ElementType } from 'react'
 
 interface CardInfoBigIconProps {
+  typeIcon?: 'svg' | 'img'
+  urlIcon?: string
   typeColor?: 'primary' | 'secondary' | 'none'
   link?: string
-  icon: ElementType
+  icon?: ElementType
   title: string
   description: string
 }
 
 export function CardInfoBigIcon({
+  typeIcon = 'svg',
+  urlIcon,
   typeColor,
   link = '#',
   icon: Icon,
@@ -44,7 +48,8 @@ export function CardInfoBigIcon({
       <div
         className={`w-36 h-36 flex items-center justify-center rounded-full ${iconColorIs} border transition-all duration-300 group-hover:`}
       >
-        <Icon size={80} />
+        {typeIcon && Icon && <Icon size={80} />}
+        {typeIcon && <img src={urlIcon} alt="" className="w-20 h-20" />}
       </div>
 
       <div className="flex flex-col items-center gap-3">
