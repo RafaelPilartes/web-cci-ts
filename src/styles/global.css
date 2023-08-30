@@ -14,14 +14,14 @@
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
-  background-color: #f74f22;
+  background-color: #d5a05a;
 }
 
 .swiper-button-next:after,
 .swiper-button-prev:after,
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
-  color: #f74f22;
+  color: #d5a05a;
 }
 
 @layer base {
@@ -43,7 +43,7 @@
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: #f74f22;
+    background-color: #d5a05a;
     border-radius: 14px;
   }
 }

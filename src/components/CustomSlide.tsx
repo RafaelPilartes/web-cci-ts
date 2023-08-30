@@ -85,22 +85,20 @@ export function CustomSlide({ slides }: SlidesDetailsProps) {
       ))}
 
       {/* Button  */}
-      <div
-        className={`absolute w-full inset-0 flex items-center justify-between px-4 `}
+
+      <button
+        onClick={prevSlide}
+        className="absolute top-1/2 -left-4 transform translate-x-1/2 -translate-y-1/2 w-14 h-14 text-white text-2xl px-4 py-2 bg-baseText hover:bg-primary-200 active:bg-primary-700 rounded transition-all duration-200"
       >
-        <button
-          onClick={prevSlide}
-          className="text-white text-2xl px-4 py-2 bg-baseText hover:bg-primary-200 active:bg-primary-700 rounded transition-all duration-200"
-        >
-          &lt;
-        </button>
-        <button
-          onClick={nextSlide}
-          className="text-white text-2xl px-4 py-2 bg-baseText hover:bg-primary-200 active:bg-primary-700 rounded transition-all duration-200"
-        >
-          &gt;
-        </button>
-      </div>
+        &lt;
+      </button>
+
+      <button
+        onClick={nextSlide}
+        className="absolute top-1/2 -right-4 transform -translate-x-1/2 -translate-y-1/2 w-14 h-14 text-white text-2xl px-4 py-2 bg-baseText hover:bg-primary-200 active:bg-primary-700 rounded transition-all duration-200"
+      >
+        &gt;
+      </button>
     </div>
   )
 }

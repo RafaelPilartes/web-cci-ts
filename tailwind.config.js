@@ -35,10 +35,14 @@ export default {
         baseDark: '#000F21',
         baseTextWhite: '#ffffff',
         baseTextGray: 'rgb(209 213 219)',
+
+        secondary: {
+          200: '#02215E'
+        },
         primary: {
           50: '#fee5de',
           100: '#fdc8ba',
-          200: '#f74f22',
+          200: '#D5A05A',
           300: '#de471f',
           400: '#c63f1b',
           500: '#b93b1a',
@@ -48,6 +52,9 @@ export default {
         },
         accent: '#F13024'
       },
+      boxShadow: {
+        '3xl': '0 10px 40px -15px rgba(0, 0, 0, 0.1)'
+      },
       backgroundImage: {
         footer: 'url("/background/footer-bg.jpg")'
       },
@@ -56,7 +63,8 @@ export default {
       }
     },
     fontFamily: {
-      poppins: ['Poppins']
+      poppins: ['Poppins'],
+      damion: ['Damion']
     }
   },
   plugins: [require('flowbite/plugin')]

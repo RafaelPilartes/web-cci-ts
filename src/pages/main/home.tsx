@@ -1,8 +1,13 @@
 import { useEffect } from 'react'
 
 import Aos from 'aos'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, BookOpen, Clock3, Heart, Map, Plus } from 'lucide-react'
 import { CustomSlide } from '../../components/CustomSlide'
+import { BaseButton } from '../../components/buttons/baseButton'
+import { EventCard } from '../../components/cards/EventCard'
+import { CardInfoIcon } from '../../components/cards/InfoIconCard'
+import { RecentEvents } from '../../components/main/pages/home/RecentEvents'
+import { AboutUs } from '../../components/main/pages/home/AboutUs'
 
 function Home() {
   const slidesHome: any = [
@@ -34,20 +39,20 @@ function Home() {
           <CustomSlide slides={slidesHome} />
         </div>
 
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
+        {/* Recent */}
+        <RecentEvents />
 
-        <br />
-        <br />
+        {/* About Us */}
+        <AboutUs />
 
-        <br />
-        <br />
+        <h1>Home</h1>
+        <h1>Home</h1>
+        <h1>Home</h1>
+        <h1>Home</h1>
+        <h1>Home</h1>
+        <h1>Home</h1>
+        <h1>Home</h1>
+        <h1>Home</h1>
       </div>
     </>
   )

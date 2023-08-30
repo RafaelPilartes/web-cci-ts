@@ -40,9 +40,9 @@ export const Header = () => {
         setMenuIsVisible={setMenuIsVisible}
       />
 
-      <header className="fixed z-30 w-full p-4 font-semibold">
+      <header className="fixed z-30 w-full p-4 font-semibold ">
         {/* Container */}
-        <div className="bg-white flex items-center justify-between max-w-s-1030:py-1 ">
+        <div className="bg-white flex items-center justify-between max-w-s-1030:py-1 shadow-3xl ">
           {/* Logo */}
           <div className="px-4 py-2  ">
             <img

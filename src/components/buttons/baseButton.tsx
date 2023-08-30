@@ -123,9 +123,9 @@ export function BaseButton({
     case 'CircleHover':
       return (
         <CircleHover onClick={onclickBtn}>
-          <span>{Icon && <Icon size={18} />}</span>
+          {Icon && <Icon size={18} />}
           <span> {title} </span>
-          <span>{IconRight && <IconRight size={18} />}</span>
+          {IconRight && <IconRight size={18} />}
         </CircleHover>
       )
       break
